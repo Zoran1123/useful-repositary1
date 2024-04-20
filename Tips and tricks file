@@ -1,0 +1,40 @@
+
+**KOD ZA F&Q FORME GDE ODGOVOR DOBIJAS KLIKOM NA PITANJE!
+<div class="faq-item" id="q1">
+  <div class="faq-question">Question 1: What is Lorem Ipsum?</div>
+  <div class="faq-answer">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+  </div>
+</div>
+
+<div class="faq-item" id="q2">
+  <div class="faq-question">Question 2: Why do we use it?</div>
+  <div class="faq-answer">
+    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+  </div>
+</div>
+
+<div class="faq-item" id="q3">
+  <div class="faq-question">Question 3: Where does it come from?</div>
+  <div class="faq-answer">
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+  </div>
+</div>
+
+.faq-item {
+    margin-bottom: 20px;
+  }
+  .faq-question {
+    cursor: pointer;
+  }
+  .faq-answer {
+    max-height: 0; **sluzi da se sakrije content**
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  .faq-item:target .faq-answer {
+    max-height: 1000px; /* Adjust this value to suit your content */
+  }
+</style>
+</head>
+<body>
